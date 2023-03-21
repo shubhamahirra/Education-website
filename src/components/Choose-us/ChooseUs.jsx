@@ -3,6 +3,8 @@ import { Container, Row, Col } from "reactstrap";
 
 import chooseImg from "../../assests/images/why-choose-us.png";
 import "./choose-us.css";
+import { BiCheckShield } from 'react-icons/bi';
+import { BiMessageSquareCheck } from 'react-icons/bi';
 
 import ReactPlayer from "react-player";
 
@@ -14,16 +16,23 @@ const ChooseUs = () => {
         <Row>
           <Col lg="6" md="6">
             <div className="choose__content">
-              <h2>Why Choose Us</h2>
+              <h2>Welcome to Coursdeck</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt mollitia nostrum harum eos praesentium odit a sed quod
-                aut fugit. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Reprehenderit omnis, culpa eligendi inventore perspiciatis
-                minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolores cupiditate facilis provident quidem accusamus impedit
-                tenetur laboriosam debitis nisi eius!
+                Here we guide you to the best online courses, e-learning advice, and technology and resources for education and training
               </p>
+              <div className="cate">
+              <h3>
+                <BiCheckShield/>Safe & Secured
+              </h3><p>Safe and Secured our services and every step of process</p>
+              </div>
+              <div className="cate">
+              <h3>
+              <BiMessageSquareCheck/>Highly Expert Instructors
+              
+              </h3>
+              
+              <p>There are best instructer which are highly qualified</p>
+              </div>
             </div>
           </Col>
 

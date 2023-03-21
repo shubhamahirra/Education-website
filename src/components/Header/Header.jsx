@@ -9,20 +9,20 @@ const navLinks = [
   },
   {
     display: "About",
-    url: "#",
+    url: "#aboutus",
   },
 
   {
     display: "Courses",
-    url: "#",
-  },
-  {
-    display: "Pages",
-    url: "#",
+    url: "#course",
   },
   {
     display: "Blog",
-    url: "#",
+    url: "#blog",
+  },
+  {
+    display: "Contact",
+    url: "#contact",
   },
 ];
 
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="navigation d-flex align-items-center justify-content-between">
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-pantone-line"></i> Learners.
+            <i class="ri-bar-chart-fill"></i> Coursdeck.
             </h2>
           </div>
 
@@ -53,9 +53,9 @@ const Header = () => {
             </div>
 
             <div className="nav__right">
-              <p className="mb-0 d-flex align-items-center gap-2">
+              {/* <p className="mb-0 d-flex align-items-center gap-2">
                 <i class="ri-phone-line"></i> +88 0123456789
-              </p>
+              </p> */}
             </div>
           </div>
 

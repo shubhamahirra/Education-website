@@ -9,7 +9,7 @@ import CourseCard from "./CourseCard";
 const coursesData = [
   {
     id: "01",
-    title: "Web Design BootCamp-2022 for Beginners",
+    title: "The Complete 2023 Web Development Bootcamp",
     lesson: 12,
     students: 12.5,
     rating: 5.9,
@@ -18,7 +18,7 @@ const coursesData = [
 
   {
     id: "02",
-    title: "Professional Graphics Design, PhotoShop, Adobe XD, Figma",
+    title: "Ultimate AWS Certified Solutions Architect Associate",
     lesson: 12,
     students: 12.5,
     rating: 5.9,
@@ -37,18 +37,14 @@ const coursesData = [
 
 const Courses = () => {
   return (
-    <section>
+    <section className="coursess">
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
             <div className="course__top d-flex justify-content-between align-items-center">
               <div className="course__top__left w-50">
-                <h2>Our Popular Courses</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  consequatur libero quod voluptatibus ullam quia quas, vitae
-                  voluptatem recusandae reprehenderit!
-                </p>
+                <h2>Our Trending Courses</h2>
+                
               </div>
 
               <div className="w-50 text-end">

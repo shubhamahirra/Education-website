@@ -1,13 +1,13 @@
 import React from "react";
 import "./about.css";
 import { Container, Row, Col } from "reactstrap";
-import aboutImg from "../../assests/images/about-us.png";
+import aboutImg from "../../assests/images/about-us2.jpg";
 import CountUp from "react-countup";
 import "./about.css";
 
 const AboutUs = () => {
   return (
-    <section>
+    <section className="Aboutus" id="aboutus">
       <Container>
         <Row>
           <Col lg="6" md="6">
@@ -20,9 +20,7 @@ const AboutUs = () => {
             <div className="about__content">
               <h2>About Us</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi cupiditate animi deserunt libero nesciunt corporis
-                explicabo nobis ex quo molestiae!
+              Course Hero supports students on their unique learning journey as they seek help and resources to better understand their coursework, prepare for exams, learn and remember. 
               </p>
 
               <div className="about__counter">

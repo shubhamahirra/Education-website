@@ -37,12 +37,22 @@ p {
 }
 
 button.btn {
-  background: #17bf9e;
+  background: #524FD5;
   color: #fff;
   padding: 7px 25px;
   border-radius: 50px;
 }
 
 i {
-  color: #17bf9e;
+  color: #524FD5;
+}
+.reviews{
+  color: white;
+}
+@media screen and (max-width: 600px){
+  section,
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 }

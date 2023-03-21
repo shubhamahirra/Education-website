@@ -1,3 +1,159 @@
 .testimonial__content h2 {
   font-weight: 600;
 }
+
+.testimonial__wrapper{
+  background: linear-gradient(90deg, rgba(77,70,203,1) 1%, rgba(53,53,196,1) 47%, rgba(0,155,255,1) 100%);
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 100px;
+  padding-left: 30px;
+  position: relative;
+  left: 480px;
+  padding-top: 30px;
+  /* margin-bottom: -120px; */
+  
+}
+.mb-3{
+  color: white;
+}
+
+.testi_images{
+  position: relative;
+  bottom: 300px;
+  left: 250px;
+ 
+}
+
+p{
+  color: white;
+}
+
+.testimonial__img  {
+  width: 90px;
+  border-radius: 20px;
+  position: relative;
+  
+  
+}
+/* .parent{
+  margin-left: 30px;
+  margin-bottom: -360px;
+  
+ 
+  
+} */
+.testi{
+  margin-top: -100px;
+  margin-bottom: 100px;
+  
+  
+  
+}
+.testimonial__img1  {
+  width: 90px;
+  border-radius: 20px;
+  position: relative;
+  top: 50px;
+}
+.testimonial__img2  {
+  width: 90px;
+  border-radius: 20px;
+  position: relative;
+  right: 190px;
+  bottom: 130px;
+}
+
+.testimonial__img3  {
+  width: 90px;
+  border-radius: 20px;
+  position: relative;
+  right: 350px;
+  bottom: 170px;
+}
+.testimonial__img img{
+  border-radius: 100%;
+}
+.testimonial__img2 img  {
+  border-radius: 100%;
+  position: relative;
+  
+  top: 30px;
+}
+.testimonial__img3 img  {
+  border-radius: 100%;
+  position: relative;
+  top: 30px;
+}
+.testimonial__img1 img  {
+  border-radius: 100%;
+  position: relative;
+  top: 30px;
+}
+p {
+  color: white;
+  font-size: 1rem;
+  line-height: 35px;
+  font-family: "Andada Pro", serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 700px) {
+  .testimonial__wrapper{
+    
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 0;
+    padding-left: 0px;
+    position: relative;
+    left: -80px;
+    margin-top: 100px;
+    
+  
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 360px;
+   
+    
+    
+    /* margin-bottom: -120px; */
+    background-color: aqua;
+    
+  }
+  .testi_images {
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 1180px){
+  .testimonial__wrapper{
+   
+   
+   
+    margin-right: 0px;
+    position: relative;
+    left: -80px;
+    
+    
+    
+    
+    /* margin-bottom: -120px; */
+    
+  }
+  .parent{
+    display: inline-block;
+  }
+  
+  .testi_images{
+    display: none;
+    
+   
+  }
+  .testi{
+    margin-bottom: 380px;
+    
+  }
+}
+/* .mb-4{
+  color: white;
+} */

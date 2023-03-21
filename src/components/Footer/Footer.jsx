@@ -1,5 +1,12 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import { FaTwitter } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import './footer.css'
+import { AiOutlineTwitter } from "react-icons/ai";
+
 
 import "./footer.css";
 
@@ -47,80 +54,72 @@ const footerInfoLinks = [
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <Container>
-        <Row>
-          <Col lg="3" md="6" className="mb-4">
-            <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-pantone-line"></i> Learners.
-            </h2>
-
-            <div className="follows">
-              <p className="mb-0">Follow us on social media</p>
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-facebook-line"></i>
-                </a>
-              </span>
-
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-instagram-line"></i>
-                </a>
-              </span>
-
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-linkedin-line"></i>
-                </a>
-              </span>
-
-              <span>
-                {" "}
-                <a href="facebook.com">
-                  <i class="ri-twitter-line"></i>
-                </a>
-              </span>
+    <div>
+    {/* Footer Start */}
+    <div className="container-fluid bg-dark text-light mt-5 py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+      <div className="container pt-5">
+        <div className="row g-5">
+          <div className="col-lg-3 col-md-6">
+            <h3 className="text-white mb-4">Quick Links</h3>
+            <div className="d-flex flex-column justify-content-start">
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />Home</a>
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />About Us</a>
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />Our Services</a>
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />Latest Blog</a>
+              <a className="text-light" href="#"><i className="bi bi-arrow-right text-primary me-2" />Contact Us</a>
             </div>
-          </Col>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <h3 className="text-white mb-4">Popular Links</h3>
+            <div className="d-flex flex-column justify-content-start">
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />Home</a>
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />About Us</a>
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />Our Services</a>
+              <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2" />Latest Blog</a>
+              <a className="text-light" href="#"><i className="bi bi-arrow-right text-primary me-2" />Contact Us</a>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <h3 className="text-white mb-4">Get In Touch</h3>
+            <p className="mb-2"><i className="bi bi-geo-alt text-primary me-2" />123 Mumbai, Maharashtra, INDIA</p>
+            <p className="mb-2"><i className="bi bi-envelope-open text-primary me-2" />coursdeck@gmail.com</p>
+            <p className="mb-0"><i className="bi bi-telephone text-primary me-2" />+012 345 67890</p>
+          </div>
+          <div className="col-lg-3 col-md-6">
+            <h3 className="text-white mb-4">Follow Us</h3>
+            <div className="d-flex">
+              <a className="btn btn-lg btn-secondary btn-lg-square rounded me-2" href="#"><i className="fab fa-facebook-f fw-normal" /><AiOutlineTwitter/></a>
+              <a className="btn btn-lg btn-secondary btn-lg-square rounded me-2" href="#"><i className="fab fa-linkedin-in fw-normal" /><FaFacebookF/></a>
+              <a className="btn btn-lg btn-secondary btn-lg-square rounded" href="#"><i className="fab fa-instagram fw-normal" />
+              <FaInstagram/></a>
+            </div>
+          </div>
+          <div className="col-12">
+            <form className="mx-auto" style={{maxWidth: '600px'}}>
+              <div className="input-group">
+                <input type="text" className="form-control border-white p-3" placeholder="Your Email" />
+                <button className="btn btn-primary px-4">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="container-fluid bg-secondary text-light py-4">
+      <div className="container">
+        <div className="row g-5">
+          <div className="col-md-6 text-center text-md-start">
+            <p className="mb-md-0">© <a className="text-white border-bottom" href="#">Coursdeck</a>. All Rights Reserved.</p>
+          </div>
+          <div className="col-md-6 text-center text-md-end">
+            <p className="mb-0">Designed by Shubham <a className="text-white border-bottom">Shubham Ahirrao</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* Footer End */}
+  </div>
 
-          <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Explore</h6>
-            <ListGroup className="link__list">
-              {footerQuickLinks.map((item, index) => (
-                <ListGroupItem key={index} className="border-0 ps-0 link__item">
-                  {" "}
-                  <a href={item.url}>{item.display}</a>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
-
-          <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Information</h6>
-            <ListGroup className="link__list">
-              {footerInfoLinks.map((item, index) => (
-                <ListGroupItem key={index} className="border-0 ps-0 link__item">
-                  {" "}
-                  <a href={item.url}>{item.display}</a>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
-
-          <Col lg="3" md="6">
-            <h6 className="fw-bold">Get in Touch</h6>
-
-            <p>Address: Sylhet, Bangladesh</p>
-            <p> Phone: +88 0123456789 </p>
-            <p>Email: example@gmail.com</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
   );
 };
 

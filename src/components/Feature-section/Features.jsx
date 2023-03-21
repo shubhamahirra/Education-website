@@ -5,26 +5,26 @@ import "./features.css";
 const FeatureData = [
   {
     title: "Quick Learning",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias, aperiam doloribus aut sapiente praesentium eos iste dicta amet itaque!",
+    desc: "Our organizations offer quick learning services, also known as accelerated learning or fast track learning. These programs are designed to help you learn new skills ",
     icon: "ri-draft-line",
   },
 
   {
     title: "All Time Support",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias, aperiam doloribus aut sapiente praesentium eos iste dicta amet itaque!",
+    desc: "An all-time support service is a service that is available to assist you with a problem or issue 24 hours a day, 7 days a week.",
     icon: "ri-discuss-line",
   },
 
   {
     title: "Certification",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias, aperiam doloribus aut sapiente praesentium eos iste dicta amet itaque!",
+    desc: "Our organization that provides certification programs or exams to certify individuals in a particular field or profession.",
     icon: "ri-contacts-book-line",
   },
 ];
 
 const Features = () => {
   return (
-    <section>
+    <section className="fea" id="service">
       <Container>
         <Row>
           {FeatureData.map((item, index) => (

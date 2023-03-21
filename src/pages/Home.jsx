@@ -13,20 +13,22 @@ import Testimonials from "../components/Testimonial/Testimonials";
 
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
+import Blog from "../components/Blog/Blog";
 
 const Home = () => {
   return (
     <Fragment>
       <Header />
       <HeroSection />
-      <CompanySection />
       <AboutUs />
       <Courses />
       <ChooseUs />
       <Features />
       <FreeCourse />
-      <Testimonials />
-      <Newsletter />
+      {/* <Testimonials /> */}
+      <Blog/>
+      <CompanySection />
+      {/* <Newsletter /> */}
       <Footer />
     </Fragment>
   );
